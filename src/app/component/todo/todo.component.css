@@ -1,0 +1,11 @@
+.todo_completed{
+    background: rgb(2, 88, 2);
+
+
+}
+.todo_item{
+    background: #eeeeee;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}

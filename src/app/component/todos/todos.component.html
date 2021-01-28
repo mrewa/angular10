@@ -1,0 +1,12 @@
+<p>hello</p>
+    <app-todo
+     *ngFor="let todo of todos"
+     (toggleEvent)="toggleTodo($event)"
+     (deleteEvent)="deleteTodo($event)"
+     
+       [todo]="todo">
+    </app-todo>
+   <app-addtodo (addEvent)="addTodo($event)">
+        </app-addtodo>
+    
+

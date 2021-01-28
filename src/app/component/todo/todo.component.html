@@ -1,0 +1,12 @@
+<div class="todo_item" [ngClass]="{'todo_completed': todo.completed }">
+<div class="row">
+  <div class="col-10">
+      <input type="checkbox" [checked]="todo.completed" (change)="toggle(todo)"/>
+      {{todo.title}}
+  </div>
+  <div class="col-2">
+      <button class="btn btn-danger btn-sm" (click)="delete(todo)">Delate</button>
+  </div>
+   
+</div>
+</div>

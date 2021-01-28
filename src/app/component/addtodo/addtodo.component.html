@@ -1,0 +1,11 @@
+<p>addtodo works!</p>
+<form  (ngSubmit)="addTodo()">
+    <input type="title"  name="text"
+     [(ngModel)]="text"
+     class= "form-control" 
+     placeholder="descripe your text">
+    <br>
+    <button class="btn btn-primary btn-sm" type="submit">Add</button>
+<p *ngIf="(text.length) > 0">
+the teask add "{{title}}"</p>
+</form>
